@@ -25,9 +25,7 @@ class CreditmemosResourceRoutePlugin extends AbstractPlugin implements ResourceR
     public function configure(ResourceRouteCollectionInterface $resourceRouteCollection): ResourceRouteCollectionInterface
     {
         $resourceRouteCollection
-            ->addGet(CreditmemosRestApiConfig::ACTION_CREDITMEMOS_GET)
-            ->addPost(CreditmemosRestApiConfig::ACTION_CREDITMEMOS_POST)
-            ->addPatch(CreditmemosRestApiConfig::ACTION_CREDITMEMO_ITEMS_PATCH);
+            ->addGet(CreditmemosRestApiConfig::ACTION_CREDITMEMOS_GET);
 
         return $resourceRouteCollection;
     }

@@ -109,7 +109,7 @@ class CreditmemoReader implements CreditmemoReaderInterface
 
         foreach ($creditmemoListTransfer->getItems() as $creditmemoTransfer) {
             $restCreditmemosAttributesTransfer = $this->creditmemoResourceMapper->mapCreditmemoTransferToRestCreditmemosAttributesTransfer($creditmemoTransfer);
-
+            
             $response = $response->addResource(
                 $this->restResourceBuilder->createRestResource(
                     CreditmemosRestApiConfig::RESOURCE_CREDITMEMOS,

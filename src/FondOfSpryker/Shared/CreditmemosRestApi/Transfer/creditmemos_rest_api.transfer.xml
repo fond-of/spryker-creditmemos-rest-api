@@ -12,9 +12,9 @@
         <property name="idCreditmemo" type="int" />
         <property name="orderReference" type="string" />
         <property name="customerReference" type="string" />
-        <property name="idBillingAddress" type="int"/>
-        <property name="idShippingAddress" type="int"/>
-        <property name="totals" type="RestCreditmemoTotalsAttributes"/>
+        <property name="billingAddress" type="Address"/>
+        <property name="shippingAddress" type='Address'/>
+        <property name="total" type="RestCreditmemoTotalAttributes"/>
         <property name="locale" type="string" />
         <property name="store" type="string" />
         <property name="currency" type="string" />
@@ -35,8 +35,7 @@
         <property name="discountAmount" type="int" />
     </transfer>
 
-    <transfer name="RestCreditmemoTotalsAttributes">
-        <property name="idCreditmemo" type="int" />
+    <transfer name="RestCreditmemoTotalAttributes">
         <property name="subtotal" type="int" />
         <property name="discountTotal" type="int" />
         <property name="grandTotal" type="int" />
